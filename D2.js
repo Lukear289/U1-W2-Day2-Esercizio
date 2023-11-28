@@ -42,6 +42,7 @@ if (num4 === 8 || num5 === 8 || num4 + num5 === 8 || num4 - num5 === 8) {
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 let totalShoppingCart = 40;
+let costoEffettivo = totalShoppingCart + 10;
 if (totalShoppingCart >= 50) {
   console.log('spedizione gratuita');
 } else {
