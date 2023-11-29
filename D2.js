@@ -5,6 +5,7 @@
 const num1 = 4;
 const num2 = 7;
 if (num2 > num1) {
+  // se il valore dentro la parentesi tonda è vero allora fai quello nella parentesi graffa
   console.log('il maggiore è n2');
 }
 
@@ -14,6 +15,7 @@ if (num2 > num1) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 const num3 = 7;
 if (num3 !== 5) {
+  // (diverso) collegato al numero 1
   console.log('not equal');
 }
 /* ESERCIZIO 3
@@ -22,31 +24,40 @@ if (num3 !== 5) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 const modulo = 10;
 if (modulo % 5 === 0) {
-  console.log('divisibile per 5', modulo);
+  // se il resto dentro la parentesi tonda è zero allora è divisibile per 5
+  console.log('il numero è divisibile per 5');
 }
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-const num4 = 8;
-const num5 = 2;
-if (num4 === 8 || num5 === 8 || num4 + num5 === 8 || num4 - num5 === 8) {
+const mele = 6;
+const banane = 2;
+if (mele === 8 || banane === 8 || mele + banane === 8 || mele - banane === 8) {
   console.log('risultato 8');
 }
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
-  C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
+  C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita 
+  (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 let totalShoppingCart = 40;
-let costoEffettivo = totalShoppingCart + 10;
+let costototale = totalShoppingCart;
 if (totalShoppingCart >= 50) {
-  console.log('spedizione gratuita');
+  console.log('SpedizioneGratuita costototale' + costototale);
 } else {
-  totalShoppingCart + 10;
+  costototale += 10;
+  console.log(
+    'hai speso ' +
+      costototale +
+      'il costo comprensivo di 10,00€ di spedizione è ' +
+      costototale +
+      10
+  );
 }
 
 /* ESERCIZIO 6
