@@ -2,11 +2,15 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-const num1 = 4;
+const num1 = 7;
 const num2 = 7;
 if (num2 > num1) {
   // se il valore dentro la parentesi tonda è vero allora fai quello nella parentesi graffa
   console.log('il maggiore è n2');
+} else if (num1 > num2) {
+  console.log('il maggiore è n1');
+} else {
+  console.log('i numeri sono uguali');
 }
 
 /* ESERCIZIO 2
@@ -29,7 +33,8 @@ if (modulo % 5 === 0) {
 }
 
 /* ESERCIZIO 4
-  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
+  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la 
+  loro addizione/sottrazione sia uguale a 8.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 const mele = 6;
@@ -50,21 +55,36 @@ let costototale = totalShoppingCart;
 if (totalShoppingCart >= 50) {
   console.log('SpedizioneGratuita costototale' + costototale);
 } else {
-  costototale += 10;
+  costototale = costototale + 10;
   console.log(
     'hai speso ' +
       costototale +
-      'il costo comprensivo di 10,00€ di spedizione è ' +
-      costototale +
-      10
+      'il costo totale comprensivo di spedizione è ' +
+      (costototale + 10)
   );
 }
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
-  Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
+  Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le 
+  spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+const blackfriday = 20;
+totalShoppingCart = 40;
+totalShoppingCart = (totalShoppingCart * (100 - blackfriday)) / 100;
+costototale = totalShoppingCart;
+if (totalShoppingCart >= 50) {
+  console.log('SpedizioneGratuita costototale' + costototale);
+} else {
+  costototale = costototale + 10;
+  console.log(
+    'hai speso ' +
+      costototale +
+      'il costo totale comprensivo di spedizione è ' +
+      (costototale + 10)
+  );
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -72,6 +92,9 @@ if (totalShoppingCart >= 50) {
   Alla fine mostra il risultato in console.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+const val1 = 10;
+const val2 = 8;
+const val3 = 5;
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
